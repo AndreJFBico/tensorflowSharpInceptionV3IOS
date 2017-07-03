@@ -10,3 +10,15 @@ This experiment runs on Debug mode in the simulator and writes the classificatio
 ```
 System.TypeInitializationException: The type initializer for 'TensorFlow.TFBuffer' threw an exception. ---> System.ExecutionEngineException: Attempting to JIT compile method '(wrapper native-to-managed) TensorFlow.TFBuffer:FreeBlock (intptr,intptr)' while running in aot-only mode.
 ```
+
+# Notes
+
+Xamarin iOS: Version: 10.10.0.36
+
+Xcode version: 8.3.2
+
+Mono: 5.0.1.1
+
+Tensorflow: r1.1
+
+Tensorflow Sharp: June 2017
