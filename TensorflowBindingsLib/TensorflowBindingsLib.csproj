@@ -59,8 +59,12 @@
     <ObjcBindingApiDefinition Include="ApiDefinition.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ObjcBindingNativeLibrary Include="libtensorflow-core.a" />
-    <ObjcBindingNativeLibrary Include="libprotobuf.a" />
+    <ObjcBindingNativeLibrary Include="..\..\BazelWorkSpace\tensorflowFork\tensorflow\contrib\makefile\gen\lib\libtensorflow-core.a">
+      <Link>libtensorflow-core.a</Link>
+    </ObjcBindingNativeLibrary>
+    <ObjcBindingNativeLibrary Include="..\..\BazelWorkSpace\tensorflowFork\tensorflow\contrib\makefile\gen\protobuf_ios\lib\libprotobuf.a">
+      <Link>libprotobuf.a</Link>
+    </ObjcBindingNativeLibrary>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
 </Project>
